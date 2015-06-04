@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEB page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/css/main.css" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="/style/js/main.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Codebreaker</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-5 code_enter"></div>
+        <div class="col-md-2 col-md-offset-5 answer">Answer : <span></span></div>
+        <div class="col-md-2 col-md-offset-5 numbers">
+          <div id="calculator" class="calculator">
+            <span class="numeric">1</span>
+            <span class="numeric">2</span>
+            <span class="numeric">3</span>
+            <span class="numeric">4</span>
+            <span class="numeric">5</span>
+            <span class="numeric">6</span>
+            <span id="del">C</span>
+            <span id="send">Send</span>
+            <span id="hint">Hint</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-md-offset-5 attempt">Attempt : <span><%= attempt %></span></div>
+    </div>
+
+  </div>
+
+  <!--modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">You Win!!!</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                <div class="form-group">
+                  <div class="col-md-6  col-md-offset-3 my_content">
+                    <p>Would you like start new game?"</p>
+                  </div>
+                </div>
+             </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success new_game">New Game</button>
+          <button type="button" class="btn btn-default end_game">End Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+</body>
+</html>

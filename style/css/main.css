@@ -1,0 +1,140 @@
+html,body{
+    background: url('../img/back_3.jpg');
+    background-size: 50%;
+    /*overflow: hidden;*/
+    font-family:sans-serif;
+
+}
+h1{
+    text-align: center;
+    font-weight:bold;
+}
+.code_enter{
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-height: 50px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing:5px;
+}
+.answer{
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing:5px;
+}
+.attempt{
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-height: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+.numbers
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.calculator {
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+}
+
+.calculator span {
+    display: block;
+    width: 48px;
+    height: 40px;
+    background: #ccc;
+    background-image: -webkit-linear-gradient( 15deg, blue, #157DEC, blue);
+    background-image: -moz-linear-gradient( 15deg, blue, #157DEC, blue);
+    -webkit-border-radius: 10px;
+    -mox-border-radius: 10px;
+    color: #eee;
+    text-shadow: 0 0 2px #157DEC;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    float: left;
+    margin: 5px;
+    border: 1px solid #157DEC;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculator span:hover {
+    background-image: -webkit-linear-gradient( 15deg, blue, #1569C7, blue);
+    background-image: -moz-linear-gradient( 15deg, blue, #1569C7, blue);
+}
+
+.calculator span:active {
+    background-image: -webkit-linear-gradient( 15deg, blue, blue, blue);
+    background-image: -moz-linear-gradient( 15deg, blue, blue, blue);
+}
+
+.calculator:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: left;
+}
+.calculator span#send {
+    margin-top: 5px;
+    width: 108px;
+    background: #ccc;
+    background-image: -webkit-linear-gradient( 15deg, red,crimson, red);
+    background-image: -moz-linear-gradient( 15deg, red, crimson, red);
+    border: 1px solid crimson;
+    text-shadow: 0 0 2px crimson;
+}
+.calculator span#send:hover {
+    background-image: -webkit-linear-gradient( 15deg, red, crimson, red);
+    background-image: -moz-linear-gradient( 15deg, red, crimson, red);
+}
+
+.calculator span#send:active {
+    background-image: -webkit-linear-gradient( 15deg, red, red, red);
+    background-image: -moz-linear-gradient( 15deg, red, red, red);
+}
+
+.calculator span#hint {
+    margin-top: 5px;
+    width: 167px;
+    background: #ccc;
+    background-image: -webkit-linear-gradient( 15deg, #00CC00,#39E639, #00CC00);
+    background-image: -moz-linear-gradient( 15deg, #00CC00, #39E639, #00CC00);
+    border: 1px solid #39E639;
+    text-shadow: 0 0 2px crimson;
+}
+.calculator span#hint:hover {
+    background-image: -webkit-linear-gradient( 15deg, #00CC00, #39E639, #00CC00);
+    background-image: -moz-linear-gradient( 15deg, #00CC00, #39E639, #00CC00);
+}
+
+.calculator span#hint:active {
+    background-image: -webkit-linear-gradient( 15deg, #00CC00, #00CC00, #00CC00);
+    background-image: -moz-linear-gradient( 15deg, #00CC00, #00CC00, #00CC00);
+}
+
+
+.calculator span:nth-child(3) {
+    clear: right;
+}
+.color_red
+{
+    color: red;
+}
+.color_green
+{
+    color: green;
+}
