@@ -37,12 +37,6 @@ class WebInterface
     def attempt
       @game.attempt
     end
-
-    def set_attempt
-      user_attempt = @request.params['user_attempt'].to_i
-      @game.attempt = user_attempt
-    end
-
     def compare
       res = @game.compare @request.params['user_code']
       result={:res=>res,:att=>attempt}.to_json
